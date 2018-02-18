@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://ivaejbdemo/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ivaejbdemo/">
+
+<xs:element name="getValorIva" type="tns:getValorIva"/>
+
+<xs:element name="getValorIvaResponse" type="tns:getValorIvaResponse"/>
+
+<xs:element name="getValorIvaTotal" type="tns:getValorIvaTotal"/>
+
+<xs:element name="getValorIvaTotalResponse" type="tns:getValorIvaTotalResponse"/>
+
+<xs:element name="getValorSinIva" type="tns:getValorSinIva"/>
+
+<xs:element name="getValorSinIvaResponse" type="tns:getValorSinIvaResponse"/>
+
+<xs:complexType name="getValorIvaTotal">
+<xs:sequence>
+<xs:element name="arg0" type="xs:double"/>
+<xs:element name="arg1" type="xs:double"/>
+<xs:element name="arg2" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getValorIvaTotalResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getValorIva">
+<xs:sequence>
+<xs:element name="arg0" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getValorIvaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getValorSinIva">
+<xs:sequence>
+<xs:element name="arg0" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getValorSinIvaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
